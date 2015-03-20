@@ -1,0 +1,15 @@
+{
+    "name": "eandraos/gaia-ui",
+    "description": "Publish the different css/js assets for the gaia CMS project as well as the master page layout",
+    "authors": [
+        {
+            "name": "Elie Andraos",
+            "email": "elie@andraos.org",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["laravel 5", "gaia project", "backend assets", "ui", "cms"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
