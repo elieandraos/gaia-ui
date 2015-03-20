@@ -10,9 +10,15 @@
     ],
     "keywords": ["laravel 5", "gaia project", "backend assets", "ui", "cms"],
     "license": "MIT",
-    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "~4|~5"
-    }
+    },
+    "autoload": {
+        "psr-0": {
+            "e-andraos\\gaia-ui": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
