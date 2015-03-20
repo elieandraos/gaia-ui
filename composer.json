@@ -11,5 +11,8 @@
     "keywords": ["laravel 5", "gaia project", "backend assets", "ui", "cms"],
     "license": "MIT",
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4|~5"
+    }
 }
