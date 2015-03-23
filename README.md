@@ -8,7 +8,7 @@ Run the following command in your terminal
 composer require eandraos/gaia-ui
 ```
 
-Then register this service provider with Laravel
+Then register this service provider with Laravel in config/app.php
 ```
 Gaia\Ui\GaiaUiServiceProvider
 ```
