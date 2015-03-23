@@ -9,16 +9,17 @@ class GaiaUiServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    protected $defer = false;
 
+    
     /**
-     * Bootstrap the application events.
+     * Perform post-registration booting of services.
      *
      * @return void
      */
     public function boot()
     {
-        //load the admin views and publish them under resources/views/
+        //load the admin views and publish them under resources/views/admin/*
         $this->loadViewsFrom(__DIR__ . '/../../views', 'gaia-ui');
         $this->publishes([
             __DIR__ . '/../../views' => base_path('resources/views/')
