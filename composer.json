@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "eandraos\\gaia-ui": "src/"
+            "eandraos\\gaia-ui\\": "src/"
         }
     },
     "minimum-stability": "dev",
