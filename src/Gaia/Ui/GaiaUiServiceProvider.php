@@ -19,11 +19,33 @@ class GaiaUiServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //load the admin views and publish them under resources/views/admin/*
-        $this->loadViewsFrom(__DIR__ . '/../../views', 'gaia-ui');
-        $this->publishes([
-            __DIR__ . '/../../views' => base_path('resources/views/')
-        ]);
+        //publish the admin views and publish them under resources/views/admin/*
+        $this->loadViewsFrom(__DIR__ .'/../../views', 'gaia-ui');
+        $this->publishes([ __DIR__ .'/../../views' => base_path('resources/views/') ]);
+
+        //load assets
+        $this->publishes([ __DIR__ .'/../../assets' => public_path() ], 'public');
+    }
+
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+       
     }
 
 }
