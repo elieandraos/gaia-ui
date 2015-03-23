@@ -15,10 +15,9 @@
         "illuminate/support": "5.0.x"
     },
     "autoload": {
-        "psr-4": {
-            "eandraos\\gaia-ui\\": "src/"
+        "psr-0": {
+            "Gaia\\Ui": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "stable"
 }

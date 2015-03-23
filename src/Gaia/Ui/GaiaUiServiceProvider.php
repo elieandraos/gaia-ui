@@ -1,4 +1,4 @@
-<?php namespace eandraos\gaia-ui\;
+<?php namespace Gaia\Ui;
 
 use Illuminate\Support\ServiceProvider;
 
