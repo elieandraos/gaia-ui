@@ -14,7 +14,7 @@
         "php": ">=5.4.0",
         "illuminate/support": "5.0.x",
         "illuminate/html": "5.0.x",
-        "fzaninotto/Faker": "1.4.x",
+        "fzaninotto/Faker": "1.4.x"
     },
     "autoload": {
         "psr-0": {

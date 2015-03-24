@@ -24,12 +24,13 @@ Extend your views as you need
 @extends('admin.layout')
 ```
 
+
 ## Third patry packages
 This package will also install other packages that will be used for some others gaia-packages.
 * illuminate/html:  used for form facades
 * fzaninotto/Faker: seed dummy date with migrations
 
-###illuminate/html
+####illuminate/html
 register the service provider in config/app.php
 ```
 Illuminate\Html\HtmlServiceProvider
@@ -41,7 +42,7 @@ reference the Form and Html facade in the aliases section in config/app.php
 'Form' => 'Illuminate\Html\HtmlFacade'
 ```
 
-###fzaninotto/Faker
+####fzaninotto/Faker
 ```
 use Faker\Factory as Faker;
 $faker = Faker::create();
