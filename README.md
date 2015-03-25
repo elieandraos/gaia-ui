@@ -31,6 +31,7 @@ This package will also install other packages that will be used for some others 
 * fzaninotto/Faker: seed dummy date with migrations
 
 ####illuminate/html
+Work easily with blade form templates
 register the service provider in config/app.php
 ```
 Illuminate\Html\HtmlServiceProvider
@@ -39,13 +40,23 @@ Illuminate\Html\HtmlServiceProvider
 reference the Form and Html facade in the aliases section in config/app.php
 ```
 'Form' => 'Illuminate\Html\FormFacade', 
-'Form' => 'Illuminate\Html\HtmlFacade'
+'Html' => 'Illuminate\Html\HtmlFacade'
 ```
 
 ####fzaninotto/Faker
+Generates dumy data for database seeding
 ```
 use Faker\Factory as Faker;
 $faker = Faker::create();
 dd($faker->name);
 ```
-
+####laracasts/flash
+common helper functions to set and get flash messages between controller methods
+register the service provider in config/app.php
+```
+Laracasts\Flash\FlashServiceProvider
+```
+add the facade alias
+```
+ 'Flash' => 'Laracasts\Flash\Flash'
+``` 

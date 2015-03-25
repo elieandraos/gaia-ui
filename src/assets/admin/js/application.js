@@ -7,6 +7,8 @@ var app = function() {
         menu();
         togglePanel();
         closePanel();
+        datepickers();
+        slugify();
     };
 
     var tooltips = function() {
@@ -48,6 +50,21 @@ var app = function() {
               e.stopPropagation();
         });
     };
+    
+
+    var datepickers = function(){
+        $('.input-group.date').datepicker({
+            format: "mm/dd/yyyy",
+            clearBtn: true,
+            autoclose: true,
+            todayHighlight: true,
+        });
+    };
+
+    var slugify = function()
+    {
+        $('.txt-slug').slugify('.slug-target');
+    }
     //End functions
 
 

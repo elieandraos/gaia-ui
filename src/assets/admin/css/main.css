@@ -47,6 +47,14 @@ img {
 ::-moz-selection {
   background: #fff7dd;
 }
+table th, table td 
+{
+  font-size: 13px;
+}
+ul.alert
+{
+  padding-left: 30px;
+}
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -319,7 +327,7 @@ img {
 /* Sidebar */
 .sidebar {
   width: 200px;
-  height: 100%;
+  height: auto;
   background: #293949;
   position: absolute;
   -webkit-transition: all 0.3s ease-in-out;
@@ -511,21 +519,20 @@ img {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: #f1f2f7;
-  min-height: 750px;
 }
 .main-content-wrapper #main-content {
   border-top: solid thin #e7e8ec;
   display: inline-block;
   padding: 15px 15px 0 15px;
   width: 100%;
+  padding-bottom: 45px;
 }
 .main-content-wrapper #main-content .h1 {
   margin: 0;
-  padding: 0px 10px 40px 10px;
-  float: left;
+  padding: 10px 10px 40px 10px;
   line-height: 10px;
   font-weight: 300;
-  font-size: 42px;
+  font-size: 38px;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 .main-content-toggle-left {
@@ -690,6 +697,10 @@ img {
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
+.form-horizontal .control-label
+{
+  font-weight: 300;
+}
 .input-group {
   margin-bottom: 15px;
 }
@@ -733,6 +744,14 @@ label.valid {
 .icheck .checkbox,
 .icheck .radio {
   margin-bottom: 10px;
+}
+
+input.txt-slug
+{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #e7e7e7;
+  color:#999;
 }
 /* ==========================================================================
   Buttons
@@ -1446,7 +1465,7 @@ fieldset[disabled] .btn-warning.active {
    Button Menu
    ========================================================================== */
 .dropdown-menu {
-  background-color: #F6F6F6;
+  background-color: #FFF;
   border-color: #cbd0d3;
   -webkit-box-shadow: none;
   box-shadow: none;
