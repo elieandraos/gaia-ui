@@ -27,11 +27,11 @@ Extend your views as you need
 
 ## Third patry packages
 This package will also install other packages that will be used for some others gaia-packages.
-* illuminate/html:  used for form facades
-* fzaninotto/Faker: seed dummy date with migrations
+* illuminate/html:  Work easily with blade form templates
+* fzaninotto/Faker: Generates dummy data (database seeding)
+* laracasts/flash: helper functions to set and get flash messages between controller methods
 
 ####illuminate/html
-Work easily with blade form templates
 register the service provider in config/app.php
 ```
 Illuminate\Html\HtmlServiceProvider
@@ -44,14 +44,12 @@ reference the Form and Html facade in the aliases section in config/app.php
 ```
 
 ####fzaninotto/Faker
-Generates dumy data for database seeding
 ```
 use Faker\Factory as Faker;
 $faker = Faker::create();
 dd($faker->name);
 ```
 ####laracasts/flash
-common helper functions to set and get flash messages between controller methods
 register the service provider in config/app.php
 ```
 Laracasts\Flash\FlashServiceProvider
