@@ -14,6 +14,7 @@
     <link href="/admin/css/animate.css" rel="stylesheet" />
     <link href="/admin/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/admin/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="/admin/css/sweet-alert.css" rel="stylesheet" />
     <link href="/admin/css/main.css" rel="stylesheet" />
 
 </head>
@@ -89,6 +90,7 @@
     <script type="text/javascript" src="/admin/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/admin/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="/admin/js/jquery.slugify.js"></script>
+    <script type="text/javascript" src="/admin/js/sweet-alert.min.js"></script>
     <script type="text/javascript" src="/admin/js/application.js"></script>
 </body>
 </html>

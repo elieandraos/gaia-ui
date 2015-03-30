@@ -55,6 +55,44 @@ ul.alert
 {
   padding-left: 30px;
 }
+body .table>tbody>tr>td
+{
+  border-top: 1px solid #f7f7f7;
+}
+.table>thead>tr>th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #999;
+  font-size:14px;
+}
+
+.btn-xs.btn-action
+{
+  font-size: 11px;
+  padding: 3px 5px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #FFF;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+.btn-xs.btn-action:hover 
+{
+  opacity: 1;
+}
+.centered 
+{
+  text-align: center;
+}
+.btn-full-width
+{
+  width:100%;
+}
+.remote-form
+{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -525,7 +563,7 @@ ul.alert
   display: inline-block;
   padding: 15px 15px 0 15px;
   width: 100%;
-  padding-bottom: 45px;
+  padding-bottom: 120px;
 }
 .main-content-wrapper #main-content .h1 {
   margin: 0;
@@ -1155,16 +1193,16 @@ fieldset[disabled] .btn-warning.active {
 }
 /* Transparent buttons */
 .btn-default.btn-trans {
-  color: #bdc3c7;
+  color: #666;
   background-color: transparent;
-  border: solid thin #bdc3c7;
+  border: solid thin #666;
 }
 .btn-default.btn-trans:hover,
 .btn-default.btn-trans:active,
 .btn-default.btn-trans:focus {
   color: #fff;
-  background-color: #bdc3c7;
-  border: solid thin #bdc3c7;
+  background-color: #666;
+  border: solid thin #666;
 }
 .btn-primary.btn-trans {
   color: #3598db;
@@ -1757,6 +1795,12 @@ fieldset[disabled] .btn-warning.active {
   background: #e84c3d;
   color: #fff;
   border: none;
+}
+.panel-title .btn
+{
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: -4px;
 }
 /* ==========================================================================
    Wizard
