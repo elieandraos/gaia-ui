@@ -1,6 +1,6 @@
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Gaia Admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -37,9 +37,7 @@
                         </a>
                         <ul class="dropdown-menu animated fadeInDown">
                             <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge badge-danager" id="user-inbox">5</span></a></li>
-                            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                            <li><a href="/auth/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -47,33 +45,44 @@
         </header>
 
         <!--sidebar-->
-        <aside class="sidebar">
-            <div id="leftside-navigation" class="nano">
-                <ul class="nano-content">
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>General Settings</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
+        @if(Auth::check())
+            <aside class="sidebar">
+                <div id="leftside-navigation" class="nano">
+                    <ul class="nano-content">
+                        <li class="active">
+                            <a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:void(0);"><i class="fa fa-rss"></i><span>News</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                            <ul>
+                                <li><a href="/admin/news"><i class="arrow fa fa-angle-right"></i>View All</a></li>
+                                <li><a href="/admin/news/create"><i class="arrow fa fa-angle-right"></i>Create New</a></li>
+                            </ul>
+                        </li>
+                        <!-- 
+                        <li class="sub-menu">
+                            <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>General Settings</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                            <ul>
 
-                            <li><a href="ui-alerts-notifications.html"><i class="arrow fa fa-angle-right"></i>Alerts &amp; Notifications</a></li>
-                            <li><a href="ui-panels.html"><i class="arrow fa fa-angle-right"></i>Panels</a></li>
-                            <li><a href="ui-buttons.html"><i class="arrow fa fa-angle-right"></i>Buttons</a></li>
+                                <li><a href="ui-alerts-notifications.html"><i class="arrow fa fa-angle-right"></i>Alerts &amp; Notifications</a></li>
+                                <li><a href="ui-panels.html"><i class="arrow fa fa-angle-right"></i>Panels</a></li>
+                                <li><a href="ui-buttons.html"><i class="arrow fa fa-angle-right"></i>Buttons</a></li>
 
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="pages-blank.html"><i class="arrow fa fa-angle-right"></i>Blank Page</a></li>
-                            <li><a href="pages-login.html"><i class="arrow fa fa-angle-right"></i>Login</a></li>
-                            <li><a href="pages-sign-up.html"><i class="arrow fa fa-angle-right"></i>Sign Up</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+                            </ul>
+                        </li>
+                        -->
+                        <li class="sub-menu">
+                            <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                            <ul>
+                                <li><a href="pages-blank.html"><i class="arrow fa fa-angle-right"></i>Blank Page</a></li>
+                                <li><a href="pages-login.html"><i class="arrow fa fa-angle-right"></i>Login</a></li>
+                                <li><a href="pages-sign-up.html"><i class="arrow fa fa-angle-right"></i>Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        @endif
 
         <!--main content -->
         <section class="main-content-wrapper">

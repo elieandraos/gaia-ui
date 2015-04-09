@@ -22,7 +22,8 @@ class GaiaUiServiceProvider extends ServiceProvider
         //publish the admin views and publish them under resources/views/admin/*
         $this->loadViewsFrom(__DIR__ .'/../../views', 'gaia-ui');
         $this->publishes([ __DIR__ .'/../../views' => base_path('resources/views/') ]);
-
+        //publish the database migrations and seeds
+        $this->publishes([ __DIR__ .'/../../database' => base_path('database/') ]);
         //load assets
         $this->publishes([ __DIR__ .'/../../assets' => public_path() ], 'public');
     }
