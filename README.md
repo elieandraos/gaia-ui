@@ -30,6 +30,8 @@ This package will also install other packages that will be used for some others 
 * illuminate/html:  Work easily with blade form templates
 * fzaninotto/Faker: Generates dummy data (database seeding)
 * laracasts/flash: helper functions to set and get flash messages between controller methods
+* intervention/image PHP image handling and manipulation library
+
 
 ####illuminate/html
 register the service provider in config/app.php
@@ -49,6 +51,7 @@ use Faker\Factory as Faker;
 $faker = Faker::create();
 dd($faker->name);
 ```
+
 ####laracasts/flash
 register the service provider in config/app.php
 ```
@@ -57,4 +60,14 @@ Laracasts\Flash\FlashServiceProvider
 add the facade alias
 ```
  'Flash' => 'Laracasts\Flash\Flash'
+``` 
+
+####intervention/image
+register the service provider in config/app.php
+```
+Intervention\Image\ImageServiceProvider
+```
+add the facade alias
+```
+'Image' => 'Intervention\Image\Facades\Image'
 ``` 
