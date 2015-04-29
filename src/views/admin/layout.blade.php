@@ -67,8 +67,10 @@
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="/admin/pages/templates/" id="add-template"><i class="arrow fa fa-angle-right"></i>List Templates</a></li>
+                            <li><a href="/admin/pages/create/"><i class="arrow fa fa-angle-right"></i>Create Page</a></li>
+                            <li><a href="/admin/pages/create/"><i class="arrow fa fa-angle-right"></i>List Pages</a></li>
                             <li><a href="/admin/pages/templates/create" id="add-template"><i class="arrow fa fa-angle-right"></i>Create Template</a></li>
+                            <li><a href="/admin/pages/templates/" ><i class="arrow fa fa-angle-right"></i>List Templates</a></li>
                         </ul>
                     </li>
                 </ul>
