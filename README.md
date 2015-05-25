@@ -31,6 +31,7 @@ This package will also install other packages that will be used for some others 
 * fzaninotto/Faker: Generates dummy data (database seeding)
 * laracasts/flash: helper functions to set and get flash messages between controller methods
 * intervention/image PHP image handling and manipulation library
+* zizaco/entrust Role-based permissions for Laravel 5
 
 
 ####illuminate/html
@@ -61,6 +62,45 @@ add the facade alias
 ```
  'Flash' => 'Laracasts\Flash\Flash'
 ``` 
+
+
+####zizaco/entrust
+register the service provider in config/app.php
+```
+'Zizaco\Entrust\EntrustServiceProvider'
+```
+add the facade alias
+```
+'Entrust' => 'Zizaco\Entrust\EntrustFacade'
+``` 
+
+generate the migrations
+```
+php artisan entrust:migration
+```
+migrate
+```
+php artisan migrate
+```
+edit the user model class
+```
+use Zizaco\Entrust\Traits\EntrustUserTrait;
+
+class User extends Eloquent
+{
+    use EntrustUserTrait; // add this trait to your user model
+
+    ...
+}
+```
+dump the auto-load 
+```
+composer dump-autoload
+```
+last, add the follwing property to the AuthController 
+```
+protected $redirectPath = '/admin/dashboard';
+```
 
 ####intervention/image
 register the service provider in config/app.php

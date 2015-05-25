@@ -17,7 +17,8 @@
         "fzaninotto/Faker": "1.4.x",
         "laracasts/flash": "~1.3",
         "intervention/image": "2.1.x",
-        "kalnoy/nestedset": "2.4.x"
+        "kalnoy/nestedset": "2.4.x",
+        "zizaco/entrust": "dev-laravel-5"
     },
     "autoload": {
         "psr-0": {

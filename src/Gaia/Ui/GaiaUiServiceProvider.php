@@ -26,6 +26,8 @@ class GaiaUiServiceProvider extends ServiceProvider
         $this->publishes([ __DIR__ .'/../../database' => base_path('database/') ]);
         //load assets
         $this->publishes([ __DIR__ .'/../../assets' => public_path() ], 'public');
+        //include the routes
+        include __DIR__.'/../../routes.php';
     }
 
 

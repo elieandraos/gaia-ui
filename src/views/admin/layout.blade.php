@@ -25,7 +25,7 @@
     <section id="container">
         <!-- header -->
         <header id="header">
-            <div class="brand"><a href="index.html" class="logo"><span>GAIA</span>admin</a></div>
+            <div class="brand"><a href="/admin/dashboard" class="logo"><span>GAIA</span>admin</a></div>
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
                     <i class="fa fa-bars"></i>
@@ -42,7 +42,7 @@
                             <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                             <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
                             <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge badge-danager" id="user-inbox">5</span></a></li>
-                            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                            <li><a href="/auth/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -54,7 +54,7 @@
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                        <a href="/admin/dashboard"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-rss"></i><span>News</span><i class="arrow fa fa-angle-right pull-right"></i></a>
@@ -71,6 +71,13 @@
                             <li><a href="/admin/pages/"><i class="arrow fa fa-angle-right"></i>List Pages</a></li>
                             <li><a href="/admin/pages/templates/create" id="add-template"><i class="arrow fa fa-angle-right"></i>Create Template</a></li>
                             <li><a href="/admin/pages/templates/" ><i class="arrow fa fa-angle-right"></i>List Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-user"></i><span>Users</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="/admin/users/create/"><i class="arrow fa fa-angle-right"></i>Create User</a></li>
+                            <li><a href="/admin/users/"><i class="arrow fa fa-angle-right"></i>List Users</a></li>
                         </ul>
                     </li>
                 </ul>
