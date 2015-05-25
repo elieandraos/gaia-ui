@@ -18,6 +18,17 @@ Publish the assets and the master page view
 php artisan vendor:publish
 ```
 
+Migrate the database (users table)
+```
+php artisan migrate
+```
+
+Seed the users table 
+```
+php artisan db:seed --class=UsersTableSeeder
+```
+login with gaia@mcsaatchi.me 123456
+
 #### Usage
 Extend your views as you need 
 ```

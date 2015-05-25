@@ -12,7 +12,7 @@
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
 {
-	Route::get('/admin/dashboard',  [ 'as' => 'admin.dashboard.index', 'uses' => 'Gaia\Ui\DashboardController@index']);
+	Route::get('/dashboard',  [ 'as' => 'admin.dashboard.index', 'uses' => 'Gaia\Ui\DashboardController@index']);
 });
 
 ?>
