@@ -43,6 +43,7 @@ This package will also install other packages that will be used for some others 
 * laracasts/flash: helper functions to set and get flash messages between controller methods
 * intervention/image PHP image handling and manipulation library
 * zizaco/entrust Role-based permissions for Laravel 5
+* spatie/laravel-medialibrary: associate all sorts of files with Eloquent models
 
 
 ####illuminate/html
@@ -113,12 +114,18 @@ last, add the follwing property to the AuthController
 protected $redirectPath = '/admin/dashboard';
 ```
 
-####intervention/image
+
+####spatie/laravel-medialibrary
 register the service provider in config/app.php
 ```
-Intervention\Image\ImageServiceProvider
+'Spatie\MediaLibrary\MediaLibraryServiceProvider'
 ```
 add the facade alias
 ```
-'Image' => 'Intervention\Image\Facades\Image'
+'MediaLibrary' => 'Spatie\MediaLibrary\MediaLibraryFacade',
 ``` 
+migrate
+```
+php artisan migrate
+```
+create "media" folder in the public directory
