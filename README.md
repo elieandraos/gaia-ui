@@ -41,9 +41,9 @@ This package will also install other packages that will be used for some others 
 * illuminate/html:  Work easily with blade form templates
 * fzaninotto/Faker: Generates dummy data (database seeding)
 * laracasts/flash: helper functions to set and get flash messages between controller methods
-* intervention/image PHP image handling and manipulation library
 * zizaco/entrust Role-based permissions for Laravel 5
 * spatie/laravel-medialibrary: associate all sorts of files with Eloquent models
+* vinkla/translator: Laravel translator for Eloquent objects
 
 
 ####illuminate/html
@@ -129,3 +129,37 @@ migrate
 php artisan migrate
 ```
 create "media" folder in the public directory
+
+
+####vinkla/translator
+register the service provider in config/app.php
+```
+'Vinkla\Translator\TranslatorServiceProvider'
+```
+publish the migration and configuration files
+```
+php artisan vendor:publish
+``` 
+Edit the configuration in config/translator.php
+```
+'locale' => 'App\Models\Locale'
+```
+migrate
+```
+php artisan migrate
+composer dump-autoload -o
+```
+Seed the locales
+```
+php artisan db:seed --class=LocalesTableSeeder
+```
+
+
+
+
+
+
+
+
+
+
