@@ -17,6 +17,7 @@
     <link href="/admin/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
     <link href="/admin/css/bootstrap-editable.css" rel="stylesheet" />
     <link href="/admin/css/sweet-alert.css" rel="stylesheet" />
+    <link href="/admin/css/nestable.css" rel="stylesheet" />
     <link href="/admin/css/main.css" rel="stylesheet" />
     <link href="/admin/css/template-builder.css" rel="stylesheet" />
 
@@ -73,6 +74,9 @@
                             <li><a href="/admin/pages/templates/" ><i class="arrow fa fa-angle-right"></i>List Templates</a></li>
                         </ul>
                     </li>
+                    <li class="">
+                        <a href="/admin/categories"><i class="fa fa-sitemap"></i><span>Categories</span></a>
+                    </li>           
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-user"></i><span>Users</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
@@ -102,6 +106,7 @@
     <script type="text/javascript" src="/admin/js/bootstrap-editable.min.js"></script>
     <script type="text/javascript" src="/admin/js/jquery.slugify.js"></script>
     <script type="text/javascript" src="/admin/js/sweet-alert.min.js"></script>
+    <script type="text/javascript" src="/admin/js/jquery.nestable.js"></script>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="/admin/js/application.js"></script>
     <script type="text/javascript" src="/admin/js/template.js"></script>

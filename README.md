@@ -40,10 +40,11 @@ Extend your views as you need
 This package will also install other packages that will be used for some others gaia-packages.
 * illuminate/html:  Work easily with blade form templates
 * fzaninotto/Faker: Generates dummy data (database seeding)
-* laracasts/flash: helper functions to set and get flash messages between controller methods
+* laracasts/flash: Helper functions to set and get flash messages between controller methods
 * zizaco/entrust Role-based permissions for Laravel 5
-* spatie/laravel-medialibrary: associate all sorts of files with Eloquent models
-* vinkla/translator: Laravel translator for Eloquent objects
+* spatie/laravel-medialibrary: Associate all sorts of files with Eloquent models
+* vinkla/translator: Laravel translator for Eloquent models
+* kalnoy/nestedset: Package for working with trees in a Eloquent models
 
 
 ####illuminate/html
