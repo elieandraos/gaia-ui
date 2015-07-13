@@ -39,6 +39,7 @@ var template = function() {
         //updates the SECTION (model) title in the builder ui
         $(".section_title").editable({});
         $(".component-title").editable({});
+        $(".component-unique-id").editable({});
         $(".component-options").editable({
             display: function(value) {
               $(this).text('Options');
@@ -121,7 +122,7 @@ var template = function() {
         $(".richtexteditor").each(function(){
             var id = $(this).attr('id');
             bkLib.onDomLoaded(function() {
-                new nicEditor({iconsPath : '/admin/img/nicEditorIcons.gif', fullPanel : true}).panelInstance(id);
+                new nicEditor({iconsPath : '/admin/img/nicEditorIcons.gif', fullPanel : true, maxHeight: 300}).panelInstance(id);
             });
         })
     }
@@ -168,6 +169,7 @@ function addComponent(componentTypeId, sectionId)
         success: function(response){
            $("div.section#" + sectionId+" .section-components").append(response);
            $(".component-title").editable({});
+           $(".component-unique-id").editable({});
            $(".component-options").editable({
             display: function(value) {
               $(this).text('Options');
