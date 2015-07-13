@@ -19,7 +19,8 @@
         "kalnoy/nestedset": "2.4.x",
         "zizaco/entrust": "1.4.x",
         "spatie/laravel-medialibrary": "1.6.x",
-        "vinkla/translator": "2.2.x"
+        "vinkla/translator": "2.2.x",
+        "doctrine/dbal": "~2.3"
     },
     "autoload": {
         "psr-0": {
